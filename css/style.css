@@ -430,12 +430,13 @@ section{
 
  /* media query styling */
 
- @media(max-width:1285px){
-    #menu-icon{
+ @media (max-width: 1285px) {
+    /* Existing styles for large devices */
+    #menu-icon {
         display: block;
         cursor: pointer;
     }
-    .navbar{
+    .navbar {
         display: none;
         position: absolute;
         top: 100%;
@@ -447,44 +448,229 @@ section{
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
     }
-    .navbar a{
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: var(--text-color);
     }
-
-    .navbar.active{
+    .navbar.active {
         display: block;
     }
-
-    .gradient-btn{
+    .gradient-btn {
         display: none;
     }
-    .home{
+    .home {
         flex-direction: column-reverse;
         margin: 5rem 0;
         gap: 5rem;
     }
-    .home-content{
+    .home-content {
         align-items: center;
         text-align: center;
     }
-    .home-img img{
-      width: 56vw;
+    .home-img img {
+        width: 56vw;
     }
-    .about{
+    .about {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .about h2{
+    .about h2 {
         text-align: center;
         margin: 2rem 0;
     }
-    .about img{
+    .about img {
         width: 52vw;
     }
-    .contact form{
+    .contact form {
         flex-direction: column;
     }
- }
+
+    /* Services section adjustments for large devices */
+    .heading {
+        font-size: 6rem; /* Slightly smaller heading */
+        margin: 4rem 0;
+    }
+    .services-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid columns */
+        gap: 2rem;
+    }
+    .service-box {
+        height: 450px; /* Slightly reduce height */
+    }
+    .service-info {
+        padding: 3rem; /* Reduce padding */
+    }
+    .service-info h4 {
+        font-size: 2.5rem; /* Smaller heading */
+    }
+    .service-info p {
+        font-size: 1.3rem; /* Smaller paragraph */
+    }
+    .service-info i {
+        font-size: 6rem; /* Smaller icon */
+    }
+
+    /* Projects section adjustments for large devices */
+    .projects-box {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid columns */
+        gap: 2rem;
+        row-gap: 4rem;
+    }
+    .project-card {
+        padding: 4rem 1.5rem; /* Reduce padding */
+    }
+    .project-card img {
+        max-width: 250px; /* Smaller image */
+    }
+    .project-card h3 {
+        font-size: 2.5rem; /* Smaller heading */
+    }
+    .project-card p {
+        font-size: 1.4rem; /* Smaller paragraph */
+    }
+}
+
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Existing styles for tablets */
+    .navbar {
+        width: 70%;
+        padding: 1rem 2rem;
+    }
+    .navbar a {
+        font-size: 1.8rem;
+        margin: 2rem 0;
+    }
+    .home-img img {
+        width: 70vw;
+    }
+    .about img {
+        width: 65vw;
+    }
+    .home-content h1 {
+        font-size: 3rem;
+    }
+    .home-content p {
+        font-size: 1.6rem;
+    }
+
+    /* Services section adjustments for tablets */
+    .heading {
+        font-size: 5rem; /* Smaller heading */
+        margin: 3rem 0;
+    }
+    .services-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
+        gap: 1.5rem;
+    }
+    .service-box {
+        height: 400px; /* Reduce height */
+    }
+    .service-info {
+        padding: 2rem; /* Reduce padding */
+    }
+    .service-info h4 {
+        font-size: 2.2rem; /* Smaller heading */
+    }
+    .service-info p {
+        font-size: 1.2rem; /* Smaller paragraph */
+    }
+    .service-info i {
+        font-size: 5rem; /* Smaller icon */
+    }
+
+    /* Projects section adjustments for tablets */
+    .projects-box {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid columns */
+        gap: 1.5rem;
+        row-gap: 3rem;
+    }
+    .project-card {
+        padding: 3rem 1rem; /* Reduce padding */
+    }
+    .project-card img {
+        max-width: 200px; /* Smaller image */
+    }
+    .project-card h3 {
+        font-size: 2.2rem; /* Smaller heading */
+    }
+    .project-card p {
+        font-size: 1.3rem; /* Smaller paragraph */
+    }
+}
+
+/* Media query for small phones (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Existing styles for small phones */
+    .navbar {
+        width: 100%;
+        padding: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    .navbar a {
+        font-size: 1.6rem;
+        margin: 1.5rem 0;
+    }
+    .home-img img {
+        width: 90vw;
+    }
+    .about img {
+        width: 80vw;
+    }
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        font-size: 1.4rem;
+    }
+    .gradient-btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.6rem;
+    }
+
+    /* Services section adjustments for small phones */
+    .heading {
+        font-size: 4rem; /* Smaller heading */
+        margin: 2rem 0;
+    }
+    .services-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1rem;
+    }
+    .service-box {
+        height: 350px; /* Reduce height */
+    }
+    .service-info {
+        padding: 1.5rem; /* Reduce padding */
+    }
+    .service-info h4 {
+        font-size: 2rem; /* Smaller heading */
+    }
+    .service-info p {
+        font-size: 1.1rem; /* Smaller paragraph */
+    }
+    .service-info i {
+        font-size: 4rem; /* Smaller icon */
+    }
+
+    /* Projects section adjustments for small phones */
+    .projects-box {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1rem;
+        row-gap: 2rem;
+    }
+    .project-card {
+        padding: 2rem 1rem; /* Reduce padding */
+    }
+    .project-card img {
+        max-width: 150px; /* Smaller image */
+    }
+    .project-card h3 {
+        font-size: 2rem; /* Smaller heading */
+    }
+    .project-card p {
+        font-size: 1.2rem; /* Smaller paragraph */
+    }
+}
