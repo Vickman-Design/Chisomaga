@@ -7,15 +7,15 @@
     font-family: "poppins";
 }
 
-:root{
- --bg-color: #080808;
- --second-bg-color: #101010;
- --text-color: #ffffff;
- --main-color: #ea580c;
-}
+:root {
+    --bg-color: #dbeaf6; /* Light gray background */
+    --second-bg-color: #e2e8f0; /* Slightly darker gray */
+    --text-color: #1e40af; /* Dark blue text */
+    --main-color: #3b82f6; /* Vibrant blue for accents */
+  }
 
 html{
-    font-size: 60%;
+    font-size: 58%;
     overflow-x: hidden;
 }
 
@@ -126,6 +126,11 @@ section{
 }
 .home-content h3{
     margin: 1rem 0;
+    font-size: 4rem;
+}
+
+.home-content p{
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
 }
@@ -151,7 +156,7 @@ section{
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    color: #ffffff;
+    color: #301b1b;
     margin: 3rem 0.5rem;
     transition: 0.3s ease-in-out;
 }
@@ -268,7 +273,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
+    background-color: #c0dff8;
     height: 500px;
     border-radius: 3rem;
     cursor: pointer;
@@ -412,7 +418,7 @@ section{
  }
 
  .footer ul li a{
-    color: #ffff;
+    color: #271a1a;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
  }
