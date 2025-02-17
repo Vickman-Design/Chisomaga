@@ -11,7 +11,7 @@
     --bg-color: #dbeaf6; /* Light gray background */
     --second-bg-color: #e2e8f0; /* Slightly darker gray */
     --text-color: #1e40af; /* Dark blue text */
-    --main-color: #3b82f6; /* Vibrant blue for accents */
+    --main-color: #3067c0; /* Vibrant blue for accents */
   }
 
 html{
@@ -366,6 +366,32 @@ section{
 
  /* proect section styling ends here */
 
+ /* read more butto style */
+ .hidden {
+    display: none;
+}
+
+button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color: #000000;
+    border: 1px solid transparent;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
+
+ /* read more button ends here */
  /* conact form section styling starts here */
 
  .contact{
@@ -458,7 +484,7 @@ section{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-        color: var(--text-color);
+        color: #fff;
     }
     .navbar.active {
         display: block;
